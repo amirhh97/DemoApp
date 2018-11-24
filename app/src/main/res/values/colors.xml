@@ -3,4 +3,16 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="transparent_black_hex_12">#cc000000</color>
+    <color name="transparent_white_hex_12">#ccffffff</color>
+    <color name="gray_barcode">#434343</color>
+    <color name="silver_pressed">#e0e0e0</color>
+    <color name="payment_edittext_bg">#353334</color>
+    <color name="sadad_logo">#f6ba15</color>
+    <color name="gray_lighter">#7a7a7a</color>
+    <color name="sadad_logo_pressed">#f8dc37</color>
+    <color name="gray_alpha">#bb434343</color>
+    <color name="silver">#c0c0c0</color>
+
+
 </resources>

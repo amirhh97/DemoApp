@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/shaparak"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="خرید شارژ"
+                />
+            <TextView
+                android:id="@+id/txt_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="شماره موبایل:"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:id="@+id/txt_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" مبلغ:"
+                android:layout_marginTop="5dp"
+                />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/title"
+        android:padding="30dp">
+        <EditText
+            android:id="@+id/et_card"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="شماره کارت"
+            android:gravity="center"
+            />
+        <EditText
+            android:id="@+id/et_pin2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="رمز دوم"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/et_cvv2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="cvv2"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_card_info"
+        android:text="پرداخت"
+        android:background="@drawable/bg_gold_button"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp"
+        />
+</RelativeLayout>
+</ScrollView>
