@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
 
    void addFragment(final Fragment fragment) {
       progressBar.setVisibility(View.VISIBLE);
-
       new Handler().postDelayed(new Runnable() {
          @Override
          public void run() {
@@ -59,7 +58,6 @@ public class MainActivity extends AppCompatActivity {
 
          }
       }, 1000);
-
    }
 
    @Override
