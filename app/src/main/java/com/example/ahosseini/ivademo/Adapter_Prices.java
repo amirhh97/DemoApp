@@ -18,9 +18,11 @@ import java.util.zip.Inflater;
 public class Adapter_Prices extends RecyclerView.Adapter<Adapter_Prices.Holder> {
    ArrayList<String>items;
    Context c;
-   public Adapter_Prices(ArrayList<String> prices, Activity context){
+   String mobNumber;
+   public Adapter_Prices(ArrayList<String> prices,String number, Activity context){
       items=prices;
       c=context;
+      mobNumber=number;
    }
 
    @NonNull
@@ -51,7 +53,7 @@ public class Adapter_Prices extends RecyclerView.Adapter<Adapter_Prices.Holder> 
          btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               ((MainActivity)c).addFragment(FragmentCardInfo.newInstance(txt.getText().toString()));
+               ((MainActivity)c).addFragment(FragmentCardInfo.newInstance(txt.getText().toString(),mobNumber));
             }
          });
       }

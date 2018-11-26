@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/root"
+    android:orientation="horizontal"
+    android:padding="@dimen/default_gap">
+
+    <ImageView
+        android:id="@+id/iv_itemSpinnerCard"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/tv_itemSpinnerCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_gap"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textColor="@color/transparent_white_hex_12"
+        android:textSize="@dimen/normal_small_text_size" />
+</LinearLayout>

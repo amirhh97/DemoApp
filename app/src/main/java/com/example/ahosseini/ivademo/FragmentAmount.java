@@ -47,17 +47,18 @@ public class FragmentAmount extends Fragment {
    public void onCreate(@Nullable Bundle savedInstanceState) {
       super.onCreate(savedInstanceState);
       itemsTopUp=new ArrayList<>();
-      itemsTopUp.add("10,000 ريال");
-      itemsTopUp.add("20,000 ريال");
-      itemsTopUp.add("50,000 ريال");
-      itemsTopUp.add("100,000 ريال");
+      itemsTopUp.add("10,000 ريال عادی");
+      itemsTopUp.add("20,000 ريال عادی");
+      itemsTopUp.add("50,000 ريال عادی");
+      itemsTopUp.add("100,000 ريال عادی");
+      itemsTopUp.add("200,000 ريال عادی");
       itemsPin=new ArrayList<>(itemsTopUp);
-      itemsTopUp.add("100,000 ريال");
-      itemsTopUp.add("100,000 ريال");
-      itemsTopUp.add("100,000 ريال");
-      itemsTopUp.add("100,000 ريال");
-      itemsTopUp.add("100,000 ريال");
-      rv_adapater=new Adapter_Prices(itemsTopUp,getActivity());
+      itemsTopUp.add("10,000 ريال شگفت انگیز");
+      itemsTopUp.add("20,000 ريال شگفت انگیز");
+      itemsTopUp.add("50,000 ريال شگفت انگیز");
+      itemsTopUp.add("100,000 ريال شگفت انگیز");
+      itemsTopUp.add("200,000 ريال شگفت انگیز");
+      rv_adapater=new Adapter_Prices(itemsTopUp,getArguments().getString("mobileNum"),getActivity());
    }
 
    static Fragment newInstance(String number) {

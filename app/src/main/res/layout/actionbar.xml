@@ -2,23 +2,71 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:background="#414042"
-    >
+    android:background="#414042">
+
+    <ImageView
+        android:id="@+id/iv_actionbar_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_rect_actionbar_gray"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:tint="@android:color/white"
+        android:src="@drawable/ic_arrow_left"
+        android:visibility="gone"/>
 
     <LinearLayout
-        android:id="@+id/ll_actionbar_menu_menuHolder"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        android:padding="@dimen/small_gap">
         <ImageView
-            android:layout_width="35dp"
+
+            android:layout_width="64dp"
             android:layout_height="match_parent"
-            android:layout_centerVertical="true"
-            android:src="@drawable/logo_iva"
-            android:layout_margin="5dp"
-            />
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_iva" />
+        <!--<ImageView-->
+        <!--android:id="@+id/paymentLogo"-->
+        <!--android:layout_width="64dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingBottom="@dimen/small_gap"-->
+        <!--android:paddingTop="@dimen/small_gap"-->
+        <!--android:layout_marginRight="@dimen/small_gap"-->
+        <!--android:scaleType="fitEnd"-->
+        <!--android:src="@drawable/logo_sadad_white" />-->
+
+        <!--<View-->
+        <!--android:layout_width="1px"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="@dimen/small_gap"-->
+        <!--android:layout_marginRight="@dimen/small_gap"-->
+        <!--android:background="@color/gray_lighter" />-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_actionbarPayment_shaparak"-->
+        <!--android:layout_width="64dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:paddingBottom="@dimen/small_gap"-->
+        <!--android:paddingTop="@dimen/small_gap"-->
+        <!--android:scaleType="fitStart"-->
+        <!--android:src="@drawable/shaparak" />-->
     </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/btnPopup"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_rect_actionbar_gray"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+
+        android:src="@drawable/ic_action_more_vert" />
 
 </RelativeLayout>
